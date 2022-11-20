@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		891D3278254EC7820075EC4E /* InternalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D3277254EC7820075EC4E /* InternalApp.swift */; };
+		891D327E254EC7890075EC4E /* ProductionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D327D254EC7890075EC4E /* ProductionApp.swift */; };
+		891D328E254ECB960075EC4E /* Integration in Frameworks */ = {isa = PBXBuildFile; productRef = 891D328D254ECB960075EC4E /* Integration */; };
+		891D3290254ECB9B0075EC4E /* Scenarios in Frameworks */ = {isa = PBXBuildFile; productRef = 891D328F254ECB9B0075EC4E /* Scenarios */; };
+		891D3292254ECBA90075EC4E /* Scenarios in Frameworks */ = {isa = PBXBuildFile; productRef = 891D3291254ECBA90075EC4E /* Scenarios */; };
+		8923863A248BA003008160D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89877ABE24878AA500C5B7DC /* LaunchScreen.storyboard */; };
+		8923863B248BA003008160D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89877AB924878AA500C5B7DC /* Assets.xcassets */; };
+		89238652248BA0BD008160D7 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89238651248BA0BD008160D7 /* ProjectTests.swift */; };
+		89238667248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89238666248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig */; };
+		8979CB98255C6B1A0058F2B5 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8979CB93255C6B0C0058F2B5 /* AppIcon.xcassets */; };
+		8979CBA1255C6B200058F2B5 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8979CB92255C6B060058F2B5 /* AppIcon.xcassets */; };
+		897A932E254EE7FB00D1B5B6 /* XCUIElementQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A932C254EE7FB00D1B5B6 /* XCUIElementQuery.swift */; };
+		897A932F254EE7FB00D1B5B6 /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A932D254EE7FB00D1B5B6 /* XCUIElement.swift */; };
+		897A933F254EE81A00D1B5B6 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A9339254EE81A00D1B5B6 /* TestError.swift */; };
+		897A9340254EE81A00D1B5B6 /* ApplicationRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A933A254EE81A00D1B5B6 /* ApplicationRunner.swift */; };
+		897A9344254EE81A00D1B5B6 /* Prop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A933E254EE81A00D1B5B6 /* Prop.swift */; };
+		897A935B254EE8AD00D1B5B6 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A935A254EE8AD00D1B5B6 /* WelcomeScreen.swift */; };
+		897A9366254EE90600D1B5B6 /* WelcomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A9365254EE90600D1B5B6 /* WelcomeScreenTests.swift */; };
+		89877ABA24878AA500C5B7DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89877AB924878AA500C5B7DC /* Assets.xcassets */; };
+		89877AC024878AA500C5B7DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89877ABE24878AA500C5B7DC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8923864B248BA0A7008160D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89877AA824878AA300C5B7DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89877AAF24878AA300C5B7DC;
+			remoteInfo = ZAsia-camp-Vertec;
+		};
+		8923865F248BA118008160D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89877AA824878AA300C5B7DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89877AAF24878AA300C5B7DC;
+			remoteInfo = ZAsia-camp-Vertec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		891D3277254EC7820075EC4E /* InternalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalApp.swift; sourceTree = "<group>"; };
+		891D327D254EC7890075EC4E /* ProductionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionApp.swift; sourceTree = "<group>"; };
+		891D3287254ECACD0075EC4E /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Core; sourceTree = "<group>"; };
+		89238624248B9F6E008160D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89238628248B9FF4008160D7 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		89238629248B9FF4008160D7 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		8923862B248B9FF4008160D7 /* OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OSX.xcconfig; sourceTree = "<group>"; };
+		8923862C248B9FF4008160D7 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		8923862E248B9FF4008160D7 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
+		8923862F248B9FF4008160D7 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		89238630248B9FF4008160D7 /* UITest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UITest.xcconfig; sourceTree = "<group>"; };
+		89238631248B9FF4008160D7 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		89238632248B9FF4008160D7 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
+		89238633248B9FF4008160D7 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		8923863F248BA003008160D7 /* ZAsia-camp-VertecInternal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAsia-camp-VertecInternal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89238640248BA01A008160D7 /* ZAsia-camp-Vertec.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ZAsia-camp-Vertec.xcconfig; sourceTree = "<group>"; };
+		89238641248BA03D008160D7 /* ZAsia-camp-VertecInternal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ZAsia-camp-VertecInternal.xcconfig; sourceTree = "<group>"; };
+		89238646248BA0A7008160D7 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89238651248BA0BD008160D7 /* ProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		89238654248BA0DA008160D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89238655248BA0E3008160D7 /* ZAsia-camp-VertecTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ZAsia-camp-VertecTests.xcconfig; sourceTree = "<group>"; };
+		8923865A248BA118008160D7 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8923865E248BA118008160D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89238666248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ZAsia-camp-VertecUITests.xcconfig; sourceTree = "<group>"; };
+		89238669248BAE50008160D7 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
+		8923866A248BAE5F008160D7 /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
+		8979CB92255C6B060058F2B5 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		8979CB93255C6B0C0058F2B5 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		897A932C254EE7FB00D1B5B6 /* XCUIElementQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCUIElementQuery.swift; sourceTree = "<group>"; };
+		897A932D254EE7FB00D1B5B6 /* XCUIElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
+		897A9339254EE81A00D1B5B6 /* TestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		897A933A254EE81A00D1B5B6 /* ApplicationRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRunner.swift; sourceTree = "<group>"; };
+		897A933E254EE81A00D1B5B6 /* Prop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prop.swift; sourceTree = "<group>"; };
+		897A935A254EE8AD00D1B5B6 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		897A9365254EE90600D1B5B6 /* WelcomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenTests.swift; sourceTree = "<group>"; };
+		89877AB024878AA300C5B7DC /* ZAsia-camp-Vertec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAsia-camp-Vertec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89877AB924878AA500C5B7DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89877ABF24878AA500C5B7DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89238638248BA003008160D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891D3290254ECB9B0075EC4E /* Scenarios in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89238643248BA0A7008160D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89238657248BA118008160D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891D3292254ECBA90075EC4E /* Scenarios in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89877AAD24878AA300C5B7DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891D328E254ECB960075EC4E /* Integration in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		891D328C254ECB960075EC4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89238623248B9F2B008160D7 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				89238624248B9F6E008160D7 /* Info.plist */,
+				89238640248BA01A008160D7 /* ZAsia-camp-Vertec.xcconfig */,
+				89238641248BA03D008160D7 /* ZAsia-camp-VertecInternal.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		89238626248B9FF4008160D7 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				89238627248B9FF4008160D7 /* Configurations */,
+				8923862A248B9FF4008160D7 /* Platforms */,
+				8923862D248B9FF4008160D7 /* Targets */,
+				89238632248B9FF4008160D7 /* Version.xcconfig */,
+				89238633248B9FF4008160D7 /* Project.xcconfig */,
+			);
+			name = Configurations;
+			path = ../Shared/Configurations;
+			sourceTree = "<group>";
+		};
+		89238627248B9FF4008160D7 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				89238628248B9FF4008160D7 /* Debug.xcconfig */,
+				89238629248B9FF4008160D7 /* Release.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		8923862A248B9FF4008160D7 /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				8923862B248B9FF4008160D7 /* OSX.xcconfig */,
+				8923862C248B9FF4008160D7 /* iOS.xcconfig */,
+			);
+			path = Platforms;
+			sourceTree = "<group>";
+		};
+		8923862D248B9FF4008160D7 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				8923862E248B9FF4008160D7 /* App.xcconfig */,
+				8923862F248B9FF4008160D7 /* Framework.xcconfig */,
+				89238630248B9FF4008160D7 /* UITest.xcconfig */,
+				89238631248B9FF4008160D7 /* Test.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		89238647248BA0A7008160D7 /* AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				89238650248BA0AC008160D7 /* Sources */,
+				89238653248BA0CB008160D7 /* Configurations */,
+			);
+			path = AppTests;
+			sourceTree = "<group>";
+		};
+		89238650248BA0AC008160D7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				89238651248BA0BD008160D7 /* ProjectTests.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		89238653248BA0CB008160D7 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				89238654248BA0DA008160D7 /* Info.plist */,
+				89238655248BA0E3008160D7 /* ZAsia-camp-VertecTests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		8923865B248BA118008160D7 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				89238664248BA11F008160D7 /* Sources */,
+				89238665248BA13B008160D7 /* Configurations */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		89238664248BA11F008160D7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				897A932B254EE7FB00D1B5B6 /* Extensions */,
+				897A9338254EE81A00D1B5B6 /* Runner */,
+				897A9359254EE8A400D1B5B6 /* Screens */,
+				897A9364254EE8F400D1B5B6 /* ScreenTests */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		89238665248BA13B008160D7 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				8923865E248BA118008160D7 /* Info.plist */,
+				89238666248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		89238668248BAE39008160D7 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				89238669248BAE50008160D7 /* UnitTests.xctestplan */,
+				8923866A248BAE5F008160D7 /* AllTests.xctestplan */,
+			);
+			path = TestPlans;
+			sourceTree = "<group>";
+		};
+		8979CB90255C6AF80058F2B5 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				8979CB93255C6B0C0058F2B5 /* AppIcon.xcassets */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		8979CB91255C6AFE0058F2B5 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				8979CB92255C6B060058F2B5 /* AppIcon.xcassets */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		897A932B254EE7FB00D1B5B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				897A932C254EE7FB00D1B5B6 /* XCUIElementQuery.swift */,
+				897A932D254EE7FB00D1B5B6 /* XCUIElement.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		897A9338254EE81A00D1B5B6 /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				897A9339254EE81A00D1B5B6 /* TestError.swift */,
+				897A933A254EE81A00D1B5B6 /* ApplicationRunner.swift */,
+				897A933E254EE81A00D1B5B6 /* Prop.swift */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		897A9359254EE8A400D1B5B6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				897A935A254EE8AD00D1B5B6 /* WelcomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		897A9364254EE8F400D1B5B6 /* ScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				897A9365254EE90600D1B5B6 /* WelcomeScreenTests.swift */,
+			);
+			path = ScreenTests;
+			sourceTree = "<group>";
+		};
+		89877AA724878AA300C5B7DC = {
+			isa = PBXGroup;
+			children = (
+				891D3287254ECACD0075EC4E /* Core */,
+				89877AB224878AA300C5B7DC /* ZAsia-camp-Vertec */,
+				89238647248BA0A7008160D7 /* AppTests */,
+				8923865B248BA118008160D7 /* UITests */,
+				89238626248B9FF4008160D7 /* Configurations */,
+				89238668248BAE39008160D7 /* TestPlans */,
+				89877AB124878AA300C5B7DC /* Products */,
+				891D328C254ECB960075EC4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		89877AB124878AA300C5B7DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89877AB024878AA300C5B7DC /* ZAsia-camp-Vertec.app */,
+				8923863F248BA003008160D7 /* ZAsia-camp-VertecInternal.app */,
+				89238646248BA0A7008160D7 /* AppTests.xctest */,
+				8923865A248BA118008160D7 /* UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89877AB224878AA300C5B7DC /* ZAsia-camp-Vertec */ = {
+			isa = PBXGroup;
+			children = (
+				89877AC724878BC600C5B7DC /* Sources */,
+				89877AC824878BCF00C5B7DC /* Resources */,
+				89238623248B9F2B008160D7 /* Configurations */,
+			);
+			path = ZAsia-camp-Vertec;
+			sourceTree = "<group>";
+		};
+		89877AC724878BC600C5B7DC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				891D3277254EC7820075EC4E /* InternalApp.swift */,
+				891D327D254EC7890075EC4E /* ProductionApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		89877AC824878BCF00C5B7DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89877AB924878AA500C5B7DC /* Assets.xcassets */,
+				89877ABE24878AA500C5B7DC /* LaunchScreen.storyboard */,
+				8979CB90255C6AF80058F2B5 /* Production */,
+				8979CB91255C6AFE0058F2B5 /* Internal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89238634248BA003008160D7 /* ZAsia-camp-VertecInternal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8923863C248BA003008160D7 /* Build configuration list for PBXNativeTarget "ZAsia-camp-VertecInternal" */;
+			buildPhases = (
+				89238635248BA003008160D7 /* Sources */,
+				89238638248BA003008160D7 /* Frameworks */,
+				89238639248BA003008160D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZAsia-camp-VertecInternal;
+			packageProductDependencies = (
+				891D328F254ECB9B0075EC4E /* Scenarios */,
+			);
+			productName = ZAsia-camp-Vertec;
+			productReference = 8923863F248BA003008160D7 /* ZAsia-camp-VertecInternal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89238645248BA0A7008160D7 /* AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8923864D248BA0A7008160D7 /* Build configuration list for PBXNativeTarget "AppTests" */;
+			buildPhases = (
+				89238642248BA0A7008160D7 /* Sources */,
+				89238643248BA0A7008160D7 /* Frameworks */,
+				89238644248BA0A7008160D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8923864C248BA0A7008160D7 /* PBXTargetDependency */,
+			);
+			name = AppTests;
+			productName = AppTests;
+			productReference = 89238646248BA0A7008160D7 /* AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89238659248BA118008160D7 /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89238661248BA118008160D7 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				89238656248BA118008160D7 /* Sources */,
+				89238657248BA118008160D7 /* Frameworks */,
+				89238658248BA118008160D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89238660248BA118008160D7 /* PBXTargetDependency */,
+			);
+			name = UITests;
+			packageProductDependencies = (
+				891D3291254ECBA90075EC4E /* Scenarios */,
+			);
+			productName = UITests;
+			productReference = 8923865A248BA118008160D7 /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		89877AAF24878AA300C5B7DC /* ZAsia-camp-Vertec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89877AC424878AA500C5B7DC /* Build configuration list for PBXNativeTarget "ZAsia-camp-Vertec" */;
+			buildPhases = (
+				89877AAC24878AA300C5B7DC /* Sources */,
+				89877AAD24878AA300C5B7DC /* Frameworks */,
+				89877AAE24878AA300C5B7DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZAsia-camp-Vertec;
+			packageProductDependencies = (
+				891D328D254ECB960075EC4E /* Integration */,
+			);
+			productName = ZAsia-camp-Vertec;
+			productReference = 89877AB024878AA300C5B7DC /* ZAsia-camp-Vertec.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89877AA824878AA300C5B7DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "Mo Ramezanpoor";
+				TargetAttributes = {
+					89238645248BA0A7008160D7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 89877AAF24878AA300C5B7DC;
+					};
+					89238659248BA118008160D7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 89877AAF24878AA300C5B7DC;
+					};
+					89877AAF24878AA300C5B7DC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 89877AAB24878AA300C5B7DC /* Build configuration list for PBXProject "ZAsia-camp-Vertec" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89877AA724878AA300C5B7DC;
+			productRefGroup = 89877AB124878AA300C5B7DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89877AAF24878AA300C5B7DC /* ZAsia-camp-Vertec */,
+				89238634248BA003008160D7 /* ZAsia-camp-VertecInternal */,
+				89238645248BA0A7008160D7 /* AppTests */,
+				89238659248BA118008160D7 /* UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89238639248BA003008160D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8923863A248BA003008160D7 /* LaunchScreen.storyboard in Resources */,
+				8923863B248BA003008160D7 /* Assets.xcassets in Resources */,
+				8979CBA1255C6B200058F2B5 /* AppIcon.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89238644248BA0A7008160D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89238658248BA118008160D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89238667248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89877AAE24878AA300C5B7DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89877AC024878AA500C5B7DC /* LaunchScreen.storyboard in Resources */,
+				89877ABA24878AA500C5B7DC /* Assets.xcassets in Resources */,
+				8979CB98255C6B1A0058F2B5 /* AppIcon.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89238635248BA003008160D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891D3278254EC7820075EC4E /* InternalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89238642248BA0A7008160D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89238652248BA0BD008160D7 /* ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89238656248BA118008160D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897A9340254EE81A00D1B5B6 /* ApplicationRunner.swift in Sources */,
+				897A933F254EE81A00D1B5B6 /* TestError.swift in Sources */,
+				897A9366254EE90600D1B5B6 /* WelcomeScreenTests.swift in Sources */,
+				897A932E254EE7FB00D1B5B6 /* XCUIElementQuery.swift in Sources */,
+				897A932F254EE7FB00D1B5B6 /* XCUIElement.swift in Sources */,
+				897A935B254EE8AD00D1B5B6 /* WelcomeScreen.swift in Sources */,
+				897A9344254EE81A00D1B5B6 /* Prop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89877AAC24878AA300C5B7DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891D327E254EC7890075EC4E /* ProductionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8923864C248BA0A7008160D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89877AAF24878AA300C5B7DC /* ZAsia-camp-Vertec */;
+			targetProxy = 8923864B248BA0A7008160D7 /* PBXContainerItemProxy */;
+		};
+		89238660248BA118008160D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89877AAF24878AA300C5B7DC /* ZAsia-camp-Vertec */;
+			targetProxy = 8923865F248BA118008160D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89877ABE24878AA500C5B7DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89877ABF24878AA500C5B7DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8923863D248BA003008160D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238641248BA03D008160D7 /* ZAsia-camp-VertecInternal.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8923863E248BA003008160D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238641248BA03D008160D7 /* ZAsia-camp-VertecInternal.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		8923864E248BA0A7008160D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238655248BA0E3008160D7 /* ZAsia-camp-VertecTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8923864F248BA0A7008160D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238655248BA0E3008160D7 /* ZAsia-camp-VertecTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		89238662248BA118008160D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238666248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		89238663248BA118008160D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238666248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		89877AC224878AA500C5B7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238628248B9FF4008160D7 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		89877AC324878AA500C5B7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238629248B9FF4008160D7 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		89877AC524878AA500C5B7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238640248BA01A008160D7 /* ZAsia-camp-Vertec.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		89877AC624878AA500C5B7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89238640248BA01A008160D7 /* ZAsia-camp-Vertec.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8923863C248BA003008160D7 /* Build configuration list for PBXNativeTarget "ZAsia-camp-VertecInternal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8923863D248BA003008160D7 /* Debug */,
+				8923863E248BA003008160D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8923864D248BA0A7008160D7 /* Build configuration list for PBXNativeTarget "AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8923864E248BA0A7008160D7 /* Debug */,
+				8923864F248BA0A7008160D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89238661248BA118008160D7 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89238662248BA118008160D7 /* Debug */,
+				89238663248BA118008160D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89877AAB24878AA300C5B7DC /* Build configuration list for PBXProject "ZAsia-camp-Vertec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89877AC224878AA500C5B7DC /* Debug */,
+				89877AC324878AA500C5B7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89877AC424878AA500C5B7DC /* Build configuration list for PBXNativeTarget "ZAsia-camp-Vertec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89877AC524878AA500C5B7DC /* Debug */,
+				89877AC624878AA500C5B7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		891D328D254ECB960075EC4E /* Integration */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Integration;
+		};
+		891D328F254ECB9B0075EC4E /* Scenarios */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Scenarios;
+		};
+		891D3291254ECBA90075EC4E /* Scenarios */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Scenarios;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 89877AA824878AA300C5B7DC /* Project object */;
+}

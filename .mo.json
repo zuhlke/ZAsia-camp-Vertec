@@ -1,0 +1,11 @@
+{
+  "ci" : {
+    "hasPrivateDependencies" : false,
+    "shouldArchiveApps" : false,
+    "testDestinationName" : "iPhone 14 Pro",
+    "testScheme" : "ZAsia-camp-VertecInternal"
+  },
+  "projectName" : "ZAsia-camp-Vertec",
+  "swiftVersion" : "5.7",
+  "xcodeVersion" : "14.0.1"
+}

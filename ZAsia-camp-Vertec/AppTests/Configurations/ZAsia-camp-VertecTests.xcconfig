@@ -1,0 +1,11 @@
+
+#include "../../../Shared/Configurations/Platforms/iOS.xcconfig"
+#include "../../../Shared/Configurations/Targets/Test.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.mohsenr.z-asia-camp--vertec.app-tests
+
+DEVELOPMENT_TEAM = 3JGTLQ34KE
+
+INFOPLIST_FILE = AppTests/Configurations/Info.plist
+
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/ZAsia-camp-VertecInternal.app/ZAsia-camp-VertecInternal

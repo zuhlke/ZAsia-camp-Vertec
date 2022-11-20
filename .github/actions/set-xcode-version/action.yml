@@ -1,0 +1,13 @@
+name: Set Xcode Version
+description: Set correct Xcode version for command line use.
+
+runs:
+  using: composite
+
+  steps:
+  - name: Set Xcode Version
+    run: |
+      sudo xcode-select --switch /Applications/Xcode_14.0.1.app
+      xcodebuild -version
+      swift --version
+    shell: bash

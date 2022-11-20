@@ -1,0 +1,4 @@
+
+#include "ZAsia-camp-Vertec.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.mohsenr.z-asia-camp--vertec.internal

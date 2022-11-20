@@ -1,0 +1,72 @@
+name: Test App
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build-for-testing:
+    name: Build for Testing
+
+    # Check pre-installed software on https://github.com/actions/virtual-environments/blob/main/images/macos/macos-12-Readme.md
+    runs-on: macos-12
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Set Xcode Version
+      uses: ./.github/actions/set-xcode-version
+
+    - name: Build for Testing
+      run: xcodebuild build-for-testing -workspace ZAsia-camp-Vertec.xcworkspace -scheme ZAsia-camp-VertecInternal -destination "name=iPhone 14 Pro" -derivedDataPath DerivedData
+
+    - name: Pack DerivedData
+      run: zip -r DerivedData DerivedData
+
+    - name: Upload DerivedData
+      uses: actions/upload-artifact@v2
+      with:
+        name: DerivedData.zip
+        path: DerivedData.zip
+        retention-days: 1
+
+  test:
+    name: Test
+
+    needs:
+    - build-for-testing
+
+    # Check pre-installed software on https://github.com/actions/virtual-environments/blob/main/images/macos/macos-12-Readme.md
+    runs-on: macos-12
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Set Xcode Version
+      uses: ./.github/actions/set-xcode-version
+
+    - name: Download Derived Data
+      uses: actions/download-artifact@v2
+      with:
+        name: DerivedData.zip
+        path: DerivedDataPack
+
+    - name: Unpack Derived Data
+      run: |
+        unzip DerivedDataPack/DerivedData.zip
+        rm -rf DerivedDataPack
+
+    - name: Run Tests
+      run: xcodebuild test-without-building -workspace ZAsia-camp-Vertec.xcworkspace -scheme ZAsia-camp-VertecInternal -destination "name=iPhone 14 Pro" -derivedDataPath DerivedData -resultBundlePath TestResults
+
+    - name: Report Test Results
+      if: success() || failure()
+      uses: kishikawakatsumi/xcresulttool@e75dc9b8fa538ca3ee606acf285a296f546683e4
+      with:
+        path: TestResults.xcresult
+        show-code-coverage: false
+        show-passed-tests: false
+        title: Test Results

@@ -1,0 +1,12 @@
+
+#include "../../../Shared/Configurations/Platforms/iOS.xcconfig"
+#include "../../../Shared/Configurations/Targets/App.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.mohsenr.z-asia-camp--vertec
+DISPLAY_NAME = ZAsia-camp-Vertec
+
+INFOPLIST_FILE = ZAsia-camp-Vertec/Configurations/Info.plist
+
+DEVELOPMENT_TEAM = 3JGTLQ34KE
+
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon

@@ -1,0 +1,11 @@
+
+#include "../../../Shared/Configurations/Platforms/iOS.xcconfig"
+#include "../../../Shared/Configurations/Targets/UITest.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.mohsenr.z-asia-camp--vertec.ui-tests
+
+DEVELOPMENT_TEAM = 3JGTLQ34KE
+
+INFOPLIST_FILE = UITests/Configurations/Info.plist
+
+TEST_TARGET_NAME = ZAsia-camp-VertecInternal
