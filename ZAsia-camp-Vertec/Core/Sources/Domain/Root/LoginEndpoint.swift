@@ -8,6 +8,12 @@
 import Foundation
 import Support
 
+struct LoginEndpoints {
+    var logIn: LoginEndpoint {
+        .init()
+    }
+}
+
 struct LoginEndpoint: HTTPEndpoint {
     
     struct Input: Codable {

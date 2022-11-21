@@ -13,7 +13,9 @@ public struct RootView: View {
     }
     
     public var body: some View {
-        WelcomeView(date: model.services.dateProvider.now)
+        LoginView { formData in
+            try? await model.logIn(username: formData.username, password: formData.password)
+        }
     }
 
 }

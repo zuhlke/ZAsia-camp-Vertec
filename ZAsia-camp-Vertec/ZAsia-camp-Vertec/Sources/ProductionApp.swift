@@ -6,7 +6,7 @@ import SwiftUI
 struct ProductionApp: App {
     
     @StateObject
-    private var model = ApplicationModel()
+    private var model = ApplicationModel(environment: .production)
     
     var body: some Scene {
         WindowGroup {
