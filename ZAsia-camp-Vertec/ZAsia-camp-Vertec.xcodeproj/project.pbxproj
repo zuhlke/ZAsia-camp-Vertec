@@ -27,6 +27,8 @@
 		897A9366254EE90600D1B5B6 /* WelcomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A9365254EE90600D1B5B6 /* WelcomeScreenTests.swift */; };
 		89877ABA24878AA500C5B7DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89877AB924878AA500C5B7DC /* Assets.xcassets */; };
 		89877AC024878AA500C5B7DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89877ABE24878AA500C5B7DC /* LaunchScreen.storyboard */; };
+		8D2B7BFE292B684C0052C545 /* LoginScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2B7BFD292B684C0052C545 /* LoginScreenTests.swift */; };
+		8D2B7C00292B69920052C545 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2B7BFF292B69920052C545 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +37,14 @@
 			containerPortal = 89877AA824878AA300C5B7DC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 89877AAF24878AA300C5B7DC;
-			remoteInfo = ZAsia-camp-Vertec;
+			remoteInfo = "ZAsia-camp-Vertec";
 		};
 		8923865F248BA118008160D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 89877AA824878AA300C5B7DC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 89877AAF24878AA300C5B7DC;
-			remoteInfo = ZAsia-camp-Vertec;
+			remoteInfo = "ZAsia-camp-Vertec";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,16 +63,16 @@
 		89238631248B9FF4008160D7 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		89238632248B9FF4008160D7 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		89238633248B9FF4008160D7 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		8923863F248BA003008160D7 /* ZAsia-camp-VertecInternal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAsia-camp-VertecInternal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		89238640248BA01A008160D7 /* ZAsia-camp-Vertec.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ZAsia-camp-Vertec.xcconfig; sourceTree = "<group>"; };
-		89238641248BA03D008160D7 /* ZAsia-camp-VertecInternal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ZAsia-camp-VertecInternal.xcconfig; sourceTree = "<group>"; };
+		8923863F248BA003008160D7 /* ZAsia-camp-VertecInternal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZAsia-camp-VertecInternal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89238640248BA01A008160D7 /* ZAsia-camp-Vertec.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ZAsia-camp-Vertec.xcconfig"; sourceTree = "<group>"; };
+		89238641248BA03D008160D7 /* ZAsia-camp-VertecInternal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ZAsia-camp-VertecInternal.xcconfig"; sourceTree = "<group>"; };
 		89238646248BA0A7008160D7 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89238651248BA0BD008160D7 /* ProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		89238654248BA0DA008160D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89238655248BA0E3008160D7 /* ZAsia-camp-VertecTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ZAsia-camp-VertecTests.xcconfig; sourceTree = "<group>"; };
+		89238655248BA0E3008160D7 /* ZAsia-camp-VertecTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ZAsia-camp-VertecTests.xcconfig"; sourceTree = "<group>"; };
 		8923865A248BA118008160D7 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8923865E248BA118008160D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89238666248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ZAsia-camp-VertecUITests.xcconfig; sourceTree = "<group>"; };
+		89238666248BA153008160D7 /* ZAsia-camp-VertecUITests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "ZAsia-camp-VertecUITests.xcconfig"; sourceTree = "<group>"; };
 		89238669248BAE50008160D7 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
 		8923866A248BAE5F008160D7 /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
 		8979CB92255C6B060058F2B5 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
@@ -82,9 +84,11 @@
 		897A933E254EE81A00D1B5B6 /* Prop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prop.swift; sourceTree = "<group>"; };
 		897A935A254EE8AD00D1B5B6 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		897A9365254EE90600D1B5B6 /* WelcomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenTests.swift; sourceTree = "<group>"; };
-		89877AB024878AA300C5B7DC /* ZAsia-camp-Vertec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAsia-camp-Vertec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89877AB024878AA300C5B7DC /* ZAsia-camp-Vertec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZAsia-camp-Vertec.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89877AB924878AA500C5B7DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89877ABF24878AA500C5B7DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D2B7BFD292B684C0052C545 /* LoginScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenTests.swift; sourceTree = "<group>"; };
+		8D2B7BFF292B69920052C545 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				897A935A254EE8AD00D1B5B6 /* WelcomeScreen.swift */,
+				8D2B7BFF292B69920052C545 /* LoginScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				897A9365254EE90600D1B5B6 /* WelcomeScreenTests.swift */,
+				8D2B7BFD292B684C0052C545 /* LoginScreenTests.swift */,
 			);
 			path = ScreenTests;
 			sourceTree = "<group>";
@@ -328,7 +334,7 @@
 				89877AC824878BCF00C5B7DC /* Resources */,
 				89238623248B9F2B008160D7 /* Configurations */,
 			);
-			path = ZAsia-camp-Vertec;
+			path = "ZAsia-camp-Vertec";
 			sourceTree = "<group>";
 		};
 		89877AC724878BC600C5B7DC /* Sources */ = {
@@ -366,11 +372,11 @@
 			);
 			dependencies = (
 			);
-			name = ZAsia-camp-VertecInternal;
+			name = "ZAsia-camp-VertecInternal";
 			packageProductDependencies = (
 				891D328F254ECB9B0075EC4E /* Scenarios */,
 			);
-			productName = ZAsia-camp-Vertec;
+			productName = "ZAsia-camp-Vertec";
 			productReference = 8923863F248BA003008160D7 /* ZAsia-camp-VertecInternal.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -425,11 +431,11 @@
 			);
 			dependencies = (
 			);
-			name = ZAsia-camp-Vertec;
+			name = "ZAsia-camp-Vertec";
 			packageProductDependencies = (
 				891D328D254ECB960075EC4E /* Integration */,
 			);
-			productName = ZAsia-camp-Vertec;
+			productName = "ZAsia-camp-Vertec";
 			productReference = 89877AB024878AA300C5B7DC /* ZAsia-camp-Vertec.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -538,9 +544,11 @@
 			files = (
 				897A9340254EE81A00D1B5B6 /* ApplicationRunner.swift in Sources */,
 				897A933F254EE81A00D1B5B6 /* TestError.swift in Sources */,
+				8D2B7C00292B69920052C545 /* LoginScreen.swift in Sources */,
 				897A9366254EE90600D1B5B6 /* WelcomeScreenTests.swift in Sources */,
 				897A932E254EE7FB00D1B5B6 /* XCUIElementQuery.swift in Sources */,
 				897A932F254EE7FB00D1B5B6 /* XCUIElement.swift in Sources */,
+				8D2B7BFE292B684C0052C545 /* LoginScreenTests.swift in Sources */,
 				897A935B254EE8AD00D1B5B6 /* WelcomeScreen.swift in Sources */,
 				897A9344254EE81A00D1B5B6 /* Prop.swift in Sources */,
 			);
