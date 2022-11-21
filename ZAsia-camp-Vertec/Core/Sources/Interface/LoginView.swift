@@ -10,9 +10,19 @@ import SwiftUI
 import Localization
 
 public struct LoginView: View {
+    public struct FormData {
+        public var username: String
+        public var password: String
+    }
+    
     @State var username: String = ""
     @State var password: String = ""
-    public init() {}
+    @State var isLoggingIn = false
+    var logIn: (FormData) async -> Void
+    
+    public init(logIn: @escaping (FormData) async -> Void) {
+        self.logIn = logIn
+    }
     
     public var body: some View {
         NavigationView {
@@ -20,9 +30,12 @@ public struct LoginView: View {
                 TextField(localize(.username_hint_text), text: $username)
                 SecureField(localize(.password_hint_text), text: $password)
                 
+                if isLoggingIn {
+                    Text(.logging_loading_indicator_label)
+                }
+                
                 Button {
-                    // do nothing
-                    print("\(username) and \(password)")
+                    logIn(username: username, password: password)
                 } label: {
                     Text(localize(.login_button_text))
                         .frame(width: 50)
@@ -38,6 +51,14 @@ public struct LoginView: View {
             }
     
             .navigationTitle(Text(.login_screen_title))
+        }
+    }
+    
+    func logIn(username: String, password: String) {
+        Task {
+            isLoggingIn = true
+            await logIn(FormData(username: username, password: password))
+            isLoggingIn = false
         }
     }
     

@@ -6,6 +6,7 @@ public enum StringLocalizationKey: String, CaseIterable {
     case username_hint_text
     case password_hint_text
     case login_button_text
+    case logging_loading_indicator_label
 }
 
 public enum ParameterisedStringLocalizable {

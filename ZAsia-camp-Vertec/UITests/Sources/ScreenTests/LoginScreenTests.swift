@@ -16,4 +16,16 @@ class LoginScreenTests: XCTestCase {
             XCTAssert(loginScreen.buttonLogin.exists)
         }
     }
+
+    func testLoggingInShowsLoadingIndicator() throws {
+        try runner.run { app in
+            let loginScreen = LoginScreen(app: app)
+            loginScreen.textFieldUserName.tap()
+            loginScreen.textFieldUserName.typeText("me")
+            loginScreen.textFieldPassword.tap()
+            loginScreen.textFieldPassword.typeText("pass")
+            loginScreen.buttonLogin.tap()
+            XCTAssert(loginScreen.loadingIndicator.exists)
+        }
+    }
 }

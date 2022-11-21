@@ -27,4 +27,8 @@ struct LoginScreen {
     var buttonLogin: XCUIElement {
         app.buttons[localized: .login_button_text]
     }
+    
+    var loadingIndicator: XCUIElement {
+        app.staticTexts[localized: .logging_loading_indicator_label]
+    }
 }
