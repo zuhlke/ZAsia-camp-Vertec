@@ -11,6 +11,9 @@ class LoginScreenTests: XCTestCase {
         try runner.run { app in
             let loginScreen = LoginScreen(app: app)
             XCTAssert(loginScreen.heading.exists)
+            XCTAssert(loginScreen.textFieldUserName.exists)
+            XCTAssert(loginScreen.textFieldPassword.exists)
+            XCTAssert(loginScreen.buttonLogin.exists)
         }
     }
 }

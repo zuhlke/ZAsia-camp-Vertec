@@ -3,3 +3,6 @@
 "today(date: %@)" = "Today is %@";
 
 "login_screen_title" = "Login";
+"username_hint_text" = "Username";
+"password_hint_text" = "Password";
+"login_button_text" = "Login";

@@ -3,6 +3,9 @@ import Foundation
 public enum StringLocalizationKey: String, CaseIterable {
     case hello_dev
     case login_screen_title
+    case username_hint_text
+    case password_hint_text
+    case login_button_text
 }
 
 public enum ParameterisedStringLocalizable {
