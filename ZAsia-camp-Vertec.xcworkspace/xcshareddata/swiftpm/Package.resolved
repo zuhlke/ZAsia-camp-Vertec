@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Support",
-        "repositoryURL": "https://github.com/zuhlke/Support.git",
-        "state": {
-          "branch": null,
-          "revision": "ac2f5324ef16e12b2f0af635e4462e7dbc095548",
-          "version": "2.7.0"
-        }
+  "pins" : [
+    {
+      "identity" : "support",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zuhlke/Support.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8adcda19dd0db0ff0a4e6d68cea155e4788120eb"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }

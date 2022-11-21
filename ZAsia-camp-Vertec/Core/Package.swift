@@ -23,7 +23,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/zuhlke/Support.git", .upToNextMajor(from: "2.5.0")
+            url: "https://github.com/zuhlke/Support.git", branch: "main"
         ),
     ],
     targets: [
