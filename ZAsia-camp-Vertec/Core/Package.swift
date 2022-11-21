@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.6
 
 import PackageDescription
 
@@ -7,7 +7,7 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [
         .macOS(.v10_15),
-        .iOS(.v14),
+        .iOS(.v15),
         .tvOS(.v14),
         .watchOS(.v6),
     ],
