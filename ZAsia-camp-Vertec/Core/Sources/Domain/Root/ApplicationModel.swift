@@ -10,6 +10,7 @@ public struct AppEnvironment {
     }
 }
 
+@MainActor
 public class ApplicationModel: ObservableObject {
     
     public enum State {
@@ -19,11 +20,13 @@ public class ApplicationModel: ObservableObject {
     
     public let services: SystemServices
     public let environment: AppEnvironment
+    
     private let httpService: HTTPService<LoginEndpoints>
     
+    @Published
     private(set) public var state: State = .loggedOut
 
-    public init(environment: AppEnvironment, services: SystemServices = .shared) {
+    public nonisolated init(environment: AppEnvironment, services: SystemServices = .shared) {
         self.services = services
         self.environment = environment
         httpService = HTTPService(client: environment.loginClient, endpoints: LoginEndpoints())
@@ -32,6 +35,10 @@ public class ApplicationModel: ObservableObject {
     public func logIn(username: String, password: String) async throws {
         try await httpService.logIn(with: .init(username: username, password: password)).get()
         state = .loggedIn
+    }
+    
+    public func logOut() {
+        state = .loggedOut
     }
     
 }

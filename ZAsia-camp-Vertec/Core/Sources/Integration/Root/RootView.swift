@@ -6,6 +6,7 @@ import SwiftUI
 
 public struct RootView: View {
 
+    @ObservedObject
     private var model: ApplicationModel
 
     public init(model: ApplicationModel) {
@@ -13,8 +14,17 @@ public struct RootView: View {
     }
     
     public var body: some View {
-        LoginView { formData in
-            try? await model.logIn(username: formData.username, password: formData.password)
+        switch model.state {
+        case .loggedIn:
+            NavigationView {
+                Button(action: { model.logOut() }) {
+                    Text("Log out")
+                }
+            }
+        case .loggedOut:
+            LoginView { formData in
+                try? await model.logIn(username: formData.username, password: formData.password)
+            }
         }
     }
 
