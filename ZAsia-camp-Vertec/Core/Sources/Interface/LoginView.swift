@@ -34,6 +34,13 @@ public struct LoginView: View {
                     Text(.logging_loading_indicator_label)
                 }
                 
+                NavigationLink {
+                    Text("Here’s some help")
+                } label: {
+                    Text("Help")
+                }
+
+                
                 Button {
                     logIn(username: username, password: password)
                 } label: {
